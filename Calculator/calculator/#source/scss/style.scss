@@ -1,0 +1,77 @@
+@import "nullstyle";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Work+Sans&display=swap');
+.calculator{
+    font-family: 'Work Sans', sans-serif;
+    margin: 50px auto;
+    background: #17171C;
+    width: 375px;
+    height: 750px;
+    padding: 147px 20px 66px 20px;
+    border-radius:30px;
+    color:#fff;
+    cursor: pointer;
+    user-select: none;
+    .content{
+        width: 335px;
+        height: 600px;
+        .display{
+            .input{
+                width: 330px;
+                text-align: right;
+                background-color: #17171C;
+                color: #666875;
+                font-size: 40px;
+            } 
+        }
+        .display-result{
+            .input-result{
+                width: 335px;
+                text-align: right;
+                background-color: #17171C;
+                color: #fff;
+                font-size: 60px;
+            } 
+            color: #fff;
+            font-size: 60px;
+            text-align: right;
+        }
+        .btn {
+            width: 72px;
+            height: 72px;
+            background-color: #2E2F38;
+            border-radius: 24px;
+            text-align: center;
+            line-height: 72px;
+            font-size: 32px;
+            cursor: pointer;
+            user-select: none;
+            &:hover{
+                filter: brightness(125%);
+            }
+            &:active{
+                filter: brightness(85%);
+            }
+            &.bg-blue{
+                background: #4B5EFC;
+            }
+            &.bg-grey{
+                background: #4E505F;
+            }
+            &.back{
+                padding: 25% 25%;
+            }
+
+        }
+        .buttons{
+            display: grid;
+            grid-template-areas:
+            "ac plus-minus percent division"
+            "seven eight nine multyply"
+            "four five six minus"
+            "one two three plus"
+            "dot zero back equal";
+            grid-gap: 16px;
+        }
+    }
+
+}

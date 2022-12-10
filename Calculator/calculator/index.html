@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="content">
+            <div class="display">
+                <input aria-label="Search" disabled type="text" class ='input' id="display" value = 0>
+            </div>
+            <div class="display-result">
+                <input aria-label="Search" disabled type="text" class ='input-result' id="display-result" value = 0>
+            </div>
+            <div class="buttons">
+                <div id = "ac" class="btn_clear btn ac bg-grey">AC</div>
+                <div id = "cangeAsign" class="btn bg-grey additional">+/-</div>
+                <div id = "percent" class="btn bg-grey additional">%</div>
+                <div class="btn division bg-blue operations">÷</div>
+
+                <div class="number btn seven">7</div>
+                <div class="number btn eight">8</div>
+                <div class="number btn nine">9</div>
+                <div class="btn multyply bg-blue operations">×</div>
+
+                <div class="number btn four">4</div>
+                <div class="number btn five">5</div>
+                <div class="number btn six">6</div>
+                <div class="btn minus bg-blue operations">-</div>
+
+                <div class="number btn one">1</div>
+                <div class="number btn two">2</div>
+                <div class="number btn three">3</div>
+                <div class="btn plus bg-blue operations">+</div>
+
+                <div id='decimal' class="btn dot">.</div>
+                <div class="number btn zero">0</div>
+                <div id= 'clearOne' class="btn_clear btn back"><img id = 'clearOne' src="/img/Icon.png" alt=""></div>
+                <div id="resultBtn" class="btn equal bg-blue operations">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/calc.js"></script>
+</body>
+
+</html>
